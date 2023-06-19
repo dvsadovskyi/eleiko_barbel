@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input#weight::-webkit-outer-spin-button,
+input#weight::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.center {
+  width: 40%;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  background-color: white;
+}
+
+.left-side,
+.right-side {
+  width: 30%;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  padding: 5px;
+  background-color: black;
+  max-height: 100vh;
+}
+
+.left-side img,
+.right-side img {
+  max-width: 50%;
+  flex-shrink: 1;
+}
+
+#logo {
+  max-width: 100%;
+  max-height: 40%;
+  padding: 10px;
+  height: 20%;
+}
+
+#bar {
+  max-width: 100%;
+  height: 25%;
+}
+
+#weight {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 46px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.constructor {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 10px;
+}
+.center p {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 30px;
+}
+#construct {
+  height: 40px;
+  color: black;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 13px -4px rgba(0, 0, 0, 0.75);
+}
+#construct:active {
+  transform: scale(0.99);
+}
+
+#construct:hover {
+  box-shadow: 0px 0px 13px -1px rgba(0, 0, 0, 0.75);
+}
+
+#disw {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 48px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+}
+
+.barbels {
+  height: 25%;
+}
+
+.barbel {
+  max-width: 25%;
+  transition: all 0.2s ease-in-out;
+  height: 100%;
+}
+
+.barbel:hover {
+  transform: scale(1.06);
+}
+
+.barbel:active {
+  transform: scale(1);
+}

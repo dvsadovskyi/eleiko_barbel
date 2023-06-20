@@ -38,6 +38,7 @@ input#weight::-webkit-inner-spin-button {
   padding: 5px;
   background-color: black;
   max-height: 100vh;
+  overflow: auto;
 }
 
 .left-side img,
